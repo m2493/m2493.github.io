@@ -1,0 +1,308 @@
+/*GENERAL */
+
+body { /*S'appliquera à tout le body  */
+    font-family: "Heebo", sans-serif;
+    margin: 0;
+    color: #21243D;
+}
+
+/*NAVIGATION*/
+
+nav {
+    display: flex; /*L'affichage va être en flex c'est à dire on veut mettre des éléments côte à côte  */
+    justify-content: space-between; /*alignement horizontal : pour avoir un maximum de séparation entre les éléments*/
+    align-items: center;
+    /*on passe de width à max-width pour l'adaptation responsive + ajout padding-left et pading-right pour responsive aussi*/
+    max-width: 1200px; /*largeur de la balise */
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+    margin: 15px auto 0 auto; /*marges : le navigateur se débrouille pour les marges */
+
+}
+
+#nav-links {
+    display: flex;
+    gap: 65px;/*espacement entre éléments*/
+}
+
+.nav-link {
+    color:#000000;
+    text-decoration: none; /*Pour ne pas que les liens soient soulignés*/
+    font-weight: 700; /*Police en gras */
+    font-size: 20px;
+}
+
+#menu-button{
+    display: none;
+}
+
+/*HEADER*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+     /*on passe de width à max-width pour l'adaptation responsive + ajout padding-left et pading-right pour responsive aussi*/
+    max-width: 1200px; /*largeur de la balise */
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+    margin: 75px auto;
+}
+
+h1 {
+        font-weight: 700;
+        font-size: 44px;
+        margin-bottom: 0;
+    }
+
+
+
+a#button-cv {
+    background-color: #FF6464; /*couleur du fond  */
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 5px 15px; /*marge à l'intérieur   */
+}
+
+#subtitle {
+    font-size: 16px;
+    margin: 35px 0;
+}
+
+div#header-content {
+    width: 630px;
+}
+
+/*BLOG*/
+
+#blog{
+    background-color: #EDF7FA;
+    padding-bottom: 35px
+    
+
+}
+
+#blog-content{
+     /*on passe de width à max-width pour l'adaptation responsive + ajout padding-left et pading-right pour responsive aussi*/
+    max-width: 1200px; /*largeur de la balise */
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+    margin: auto;
+
+}
+
+h2 {font-weight: 400;font-size: 22px;padding-top: 20px;}
+
+#articles {
+    display: flex;
+    justify-content: space-between;
+}
+
+.article-blog {
+    background-color: white;
+    border-radius: 4px;
+    width: 543px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    max-width: 48%;
+}
+
+h3.article-title {
+    font-size: 26px;
+}
+
+p.date-categorie {
+    font-size: 26px;
+    display: flex;
+    gap: 25px;
+}
+
+p.article-description {
+    font-size: 16px;
+}
+
+/*PORTFOLIO*/ 
+
+section#projets {
+     /*on passe de width à max-width pour l'adaptation responsive + ajout padding-left et pading-right pour responsive aussi*/
+    max-width: 1200px; /*largeur de la balise */
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+    margin: auto;
+}
+
+article.projet {
+    gap: 50px;
+    display: flex;
+    margin-bottom: 40px;
+}
+
+h3.projet-title {font-weight: 700;font-size: 30px;margin: 0px 0px 15px 0px;}
+
+.date-type {
+    display: flex;
+    gap: 25px;
+}
+
+span.projet-date {
+    border-radius: 16px;
+    background-color: #142850;
+    color: #FFFFFF;
+    font-weight: 900;
+    font-size: 18px;
+    width: 62px;
+    height: 25px;
+    text-align: center;
+}
+
+span.projet-type {
+    font-size: 20px;
+    color: #8695A4;
+}
+
+p.projet-description {
+    font-size: 16px;
+}
+
+
+/*CONTACT*/
+
+div#contact-content {
+    display: flex;
+    gap: 40px;
+    /* width: 1200px; */
+    /* margin: auto; */
+}
+
+section#contact {
+     /*on passe de width à max-width pour l'adaptation responsive + ajout padding-left et pading-right pour responsive aussi*/
+    max-width: 1200px; /*largeur de la balise */
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+    margin: auto;
+}
+
+h3.contact-title {
+    font-size: 36px;
+    font-weight: 800;
+}
+
+p#contact-intro {
+    font-size: 20px;
+}
+
+p#contact-email {
+    font-size: 16px;
+}
+
+a.social-links {
+    font-size: 16px;
+    color: #000000;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 10px;
+}
+
+div#coordonnes {
+    flex: 1;
+}
+
+label {
+    font-size: 14px;
+}
+
+input, select,textarea {
+    background-color: #F7F7F7;
+    border: none;
+    height: 46px;
+}
+
+textarea#message {
+    height: 165px;
+}
+
+button {
+    background-color: black;
+    color: white;
+    height: 56px;
+    border: none;
+}
+
+/*FOOTER*/
+
+footer {
+    padding-top: 100px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+div#icon-socials {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+p#copyright {
+    font-size: 14px;
+    color: #21243D;
+}
+
+/*POUR ADAPTATION RESPONSIVE SUR DES ECRANS INFERIEURS A 700PX */
+@media(max-width:700px){
+    .nav-link {
+    display: none;
+    }
+
+    #menu-button{
+    display: block;
+    }
+    
+    
+    header{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    #header-content{
+        width: 100%;
+    }
+
+    h2{
+        text-align: center;
+    }
+    
+    #coordonnes {
+        display: none;
+    }
+
+    .projet{
+        flex-direction: column;
+    }
+
+    .projet-image{
+        width: 100%;
+    }
+
+    #articles{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .article-blog{
+        max-width: none;
+        width: 100%;
+    }
+
+    .date-categorie{
+        gap: 5px;
+    }
+}
